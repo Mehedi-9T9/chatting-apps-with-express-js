@@ -7,25 +7,75 @@
     <title>
         <%= title %>
     </title>
+    <style>
+        body {
+            background-color: #ff7675;
+        }
+
+        #login-form {
+            /* background-color: #ff7675; */
+            /* width: 1000px; */
+            margin: auto;
+
+
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 36px;
+        }
+
+        form {
+            width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid whitesmoke;
+            border-radius: 8px;
+
+
+        }
+
+        .name-input {
+            width: 250px;
+            margin: 10px auto;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            display: block;
+
+        }
+
+        .pass-input {
+            width: 250px;
+            margin: 10px auto;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            display: block;
+        }
+
+        .btn-input {
+
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
 </head>
 
 <body>
-    <h2>This is login page</h2>
-    <!-- <div id="login-container">
-        <div id="left-column"></div>
-        <div id="branding">
-            <img src="./images/logo.png" />
-            <h1>Login - Chat Application</h1>
-        </div>
-        <div id="login-form">
-            <form method="post" action="/">
-                <input type="text" name="username" placeholder="enter mobile or email" value="" />
-                <p class="error show">Error message here</p>
-                <input type="password" name="password" placeholder="enter password" />
-                <input type="submit" value="Login" />
-            </form>
-        </div>
-    </div> -->
+
+    <div id="login-form">
+        <form method="post" action="/users">
+            <h2 class="heading">Login Now</h2>
+
+            <input type="text" class="name-input" name="username" placeholder="Type Your Email" value="" />
+            <input type="password" class="pass-input" name="password" placeholder="enter password" />
+            <input type="submit" class="btn-input" value="Login" />
+        </form>
+    </div>
 </body>
 
 </html>
